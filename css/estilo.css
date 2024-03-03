@@ -1,0 +1,331 @@
+
+
+
+
+
+
+/*Estilo geral*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {background-color: black;
+
+height: 100vh;}
+
+.interface {max-width: 1280px;
+
+margin:0 auto;}
+
+.flex {display: flex;}
+
+h2.titulo {color: white;
+font-size: 38px;
+text-align:center;
+}
+h2.titulo span {color:#00FF08}
+
+.btn-contato button {
+    background-color:#00FF08;
+   padding:10px 40px;
+   font-size:18px;
+   font-weight: 600;
+   border:0;
+   border-radius: 30px;
+   cursor:pointer;
+    transition: 2s;
+}
+    
+button:hover 
+{
+
+    box-shadow:0px 0px 30px #009805;
+    transform: scale(1.05);
+}
+
+
+/* Estilo cabeçario */
+
+header {
+    padding:40px 4%;}
+header >.interface {
+display :flex;
+align-items:center;
+justify-content:space-between;
+}
+
+header a {
+color:rgb(116, 115, 115);
+text-decoration: none;
+display:inline-block;
+transition: 2s;
+}
+
+header nav ul {list-style-type: none;}
+
+header nav ul li {
+
+    display:inline-block;
+
+    padding: 0 40px;
+
+}
+
+
+
+
+header a:hover{color:white;
+transform:scale(1.05);
+}
+
+
+
+
+
+
+.btn-contato button:hover {
+ box-shadow: #00FF08;   
+transform: scale1.05()
+}
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding:40px 4%; 
+}
+
+section.topo-do-site .flex {
+
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+}
+
+.topo-do-site  h1 {
+color: white;
+font-size: 42px;
+line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {color:#00FF08}
+
+
+.topo-do-site .txt-topo-site  p {color:white;
+
+margin:40px 0px;}
+
+.topo-do-site .img-topo-site img{
+position:relative;
+animation: flutuar 2s ease-in-out infinite alternate;}
+
+@keyfrmes flutuar{
+0% {top:0;}
+
+100% {top: 30px;}
+}
+
+/* Especialidades */
+
+section.especialidades {
+    padding:40px 4%;
+}
+
+section.especialidades .flex {
+    gap:60px;
+}
+
+.especialidades .especialidades-box {color:white;
+padding:40px;
+
+margin-top: 45px;
+border-radius: 20px;
+transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px rgb(105, 105, 105);
+}
+
+.especialidades .especialidades-box i{font-size:70px;
+color:#00FF08}
+
+.especialidades .especialidades-box h3{font-size:40px;
+margin: 15px 0px;}
+
+
+
+    /* SOBRE ESTILIZAÇÃO */
+
+section.sobre {
+        padding: 80px 4%;
+    }
+
+.sobre .txtsobre {
+color:white;
+
+    }
+section.sobre .flex {
+
+    gap:60px;
+    align-items: center;
+}
+
+.sobre .txtsobre h2{
+font-size: 40px;
+line-height: 40px;
+margin-bottom: 30px;
+}
+
+.sobre .txtsobre h2 span{
+    font-size: 40px;
+    display:block;
+    color:#00FF08
+    }
+
+.sobre .txtsobre p{
+margin:20px;
+text-align: justify;
+
+    }
+
+.btn-social button{
+
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border:none;
+background-color: #009805;
+font-size: 22px;
+cursor: pointer;
+margin: 0 5px;
+transition: 1.5s;
+
+}
+
+
+
+section.portifolio {
+
+    padding:80px 4%;
+    box-shadow:0 0 40px 10px rgb(72, 71, 71);)
+}
+
+section.portifolio .flex{
+   justify-content: space-around;
+margin-top: 60px;
+}
+.img-port {
+
+    width:360px;
+    height:460px;
+   background-size: cover;
+    background-position: 100% 0%;
+transition: 8s;
+border-radius: 40px;
+cursor: pointer;
+position: relative;
+
+
+}
+
+.img-port:hover{
+  
+    background-position: 100% 100%;
+}
+
+.overlay {position:absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background-color: #1d271da0;
+border-radius: 40px;
+display:flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: 600px;
+color: white;
+opacity: 0;
+transition: .5s;}
+
+.overlay:hover {opacity: 1;
+
+}
+
+
+.section .formulario {
+
+    padding:80px 4% ;
+}
+
+form {
+    max-width: 500px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px
+}
+
+form input {width: 100%;    
+background-color: rgb(81, 81, 81);
+border: 0;
+outline: 0;
+padding: 20px 15px;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+
+}
+
+
+form textarea{
+    background-color: rgba(37, 30, 30, 0.353);
+    resize:none;
+    max-height: 500px;
+    border-radius: 15px;
+height: 80px;
+color: white;
+}
+
+form textarea text{
+padding: 5px 5px
+}
+
+/* RODAPÉ ESTILOO */
+
+footer {padding: 20px 4%;
+    margin-top: 40px;
+    box-shadow:0 0 40px 10px rgb(27, 26, 26);}
+
+
+footer .linefooter {
+    padding: 20px 0;
+    border-bottom:  2px solid #00FF08;
+}
+
+footer .flex {justify-content: space-between;}
+
+footer .linefooter p i{color: white;}
+
+
+@media screen and (max-width: 700px) {
+.menu-destop, .btn-contato {
+    display:none
+}
+.flex {flex-direction: column;}
+
+}
+  
+
+
+
+}
